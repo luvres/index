@@ -1,0 +1,44 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<h3>Sistema de Clientes</h3>
+	<a href="index.html">Voltar</a>
+	<hr>
+	<!-- 
+		action -- Define qual o arquivo sera chamado pelo formulario depois do submit 
+		method -- Define o metodo, a forma que os dados serao enviados (get ou post)
+		  get --- Envia os daods pela URL (link)
+		  post -- Esconde os dados na requisição (form)
+	 -->
+	<form action="Sistema" method="post">
+		Nome..: <br>
+		<!-- Todo input deve ter um name, pois atraves do name que o java recupera o 
+		valor digitado no campo -->
+		<input type="text" name="nome" required>
+		<br><br>
+		E-mail..: <br>
+		<input type="email" name="email" required>
+		<br><br>
+		Sexo..: <br>
+		<input type="radio" name="sexo" value="M">M
+		<input type="radio" name="sexo" value="F">F
+		<br><br>
+		Onde Conheceu o site..: <br>
+		<input type="checkbox" name="conheceu" value="Google">GOOGLE<br>
+		<input type="checkbox" name="conheceu" value="Revista">REVISTA<br>
+		<input type="checkbox" name="conheceu" value="Outdoor">OUTDOOR<br>
+		<input type="checkbox" name="conheceu" value="Outros">OUTROS<br>
+		<br><br>
+		<input type="submit" value="ENVIAR DADOS">
+	</form>
+	
+	
+</body>
+</html>
